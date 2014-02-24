@@ -12,7 +12,7 @@
 
 </head>
 
-<body> 
+<body>
 	<div id="header">
 		<tiles:insertAttribute name="header" />
 	</div>
@@ -20,6 +20,9 @@
 		<tiles:insertAttribute name="nav-bar" />
 	</div>
 	<div id="main">
+		<div id="status">
+			<tiles:insertAttribute name="status" ignore="true" />
+		</div>
 		<tiles:insertAttribute name="main" />
 	</div>
 	<div id="footer">

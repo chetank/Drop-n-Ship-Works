@@ -11,8 +11,26 @@
         <put-attribute name="styles-script" value="/WEB-INF/tiles/styles-n-script.jsp" />
         <put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
         <put-attribute name="nav-bar" value="/WEB-INF/tiles/nav-bar.jsp" />
+        <put-attribute name="status" value="" />
         <put-attribute name="main" value="/WEB-INF/jsp/main.jsp" />
         <put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
     </definition>
+    
+    <definition name="travel-post-form-view" extends="baseLayout">
+        <put-attribute name="title" value="Post your travel" />
+        <put-attribute name="main" value="/WEB-INF/jsp/travel-post-form-view.jsp" />
+    </definition>
+    
+    <definition name="travel-post-form-success" extends="baseLayout">
+        <put-attribute name="title" value="Thanks! Your travel has been posted" />
+        <put-attribute name="status" value="/WEB-INF/jsp/travel-post-form-success.jsp" />
+        <put-attribute name="main" value="/WEB-INF/jsp/travel-post-form-view.jsp" />
+    </definition>
+    
+    <definition name="travel-search-form-view" extends="baseLayout">
+        <put-attribute name="title" value="Post your travel" />
+        <put-attribute name="main" value="/WEB-INF/jsp/travel-search-form-view.jsp" />
+    </definition>
+    
         
 </tiles-definitions>

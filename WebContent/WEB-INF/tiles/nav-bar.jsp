@@ -1,4 +1,5 @@
 <%@ include file="jsp-tag.jsp"%>
+<!-- 
 <div class="container">
 	<div class="navbar">
 		<div class="navbar-inner">
@@ -15,3 +16,4 @@
 		</div>
 	</div>
 </div>
+ -->
