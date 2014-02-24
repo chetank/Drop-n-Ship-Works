@@ -24,13 +24,13 @@
 	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 		<property name="mappings">
 			<props>
-				<prop key="/home.htm">homeController</prop>
+				<prop key="/home.htm">baseController</prop>
 			</props>
 		</property>
 	</bean>
 
 	<!-- Controllers -->
-	<bean id="homeController" class="com.dreamproject.controller.HomeController">
+	<bean id="baseController" class="com.dreamproject.controller.BaseController">
 		<property name="formView" value="baseLayout"></property>
 		<property name="successView" value="travel-post-form-success"></property>
 		<property name="validator">
@@ -39,24 +39,6 @@
 		<property name="commandName" value="travelPostDetails" />
 		<property name="commandClass" value="com.dreamproject.command.TravelPostDetailsCommand" />
 	</bean>
-
-	<!-- 
-	<prop key="/post-travel.htm">travelPostController</prop>
-	<prop key="/search-travel.htm">travelSearchController</prop>
-	<bean id="travelSearchController" class="com.dreamproject.controller.TravelSearchController"></bean>
-	<bean id="travelPostController" class="com.dreamproject.controller.TravelPostController">
-		<property name="formView" value="travel-post-form-view"></property>
-		<property name="successView" value="travel-post-form-success"></property>
-		<property name="validator">
-			<bean class="com.dreamproject.validator.TravelPostValidator" />
-		</property>
-		<property name="commandName">
-			<value>travelPostDetails</value>
-		</property>
-		<property name="commandClass"
-			value="com.dreamproject.command.TravelPostDetailsCommand" />
-	</bean>
-	 -->
 
 	<!-- View Resolvers -->
 	<bean id="xmlViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver">

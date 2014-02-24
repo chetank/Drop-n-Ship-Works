@@ -18,7 +18,5 @@ public class TravelPostValidator implements Validator {
 		ValidationUtils.rejectIfEmpty(arg1, "goingFrom", "required.state", "Please enter starting location of your travel");
 		ValidationUtils.rejectIfEmpty(arg1, "goingTo", "required.state", "Please enter destination of your travel");
 		ValidationUtils.rejectIfEmpty(arg1, "message", "required.state", "Please enter a message for sender");
-		
 	}
-
 }

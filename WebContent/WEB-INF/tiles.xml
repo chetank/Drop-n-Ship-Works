@@ -24,7 +24,6 @@
     <definition name="travel-post-form-success" extends="baseLayout">
         <put-attribute name="title" value="Thanks! Your travel has been posted" />
         <put-attribute name="status" value="/WEB-INF/jsp/travel-post-form-success.jsp" />
-        <put-attribute name="main" value="/WEB-INF/jsp/travel-post-form-view.jsp" />
     </definition>
     
     <definition name="travel-search-form-view" extends="baseLayout">
